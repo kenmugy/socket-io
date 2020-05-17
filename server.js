@@ -9,7 +9,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // add socket functionality
 const io = require('socket.io')(server);
 io.on('connection', (socket) => {
-  console.log('client connected');
+  socket.on("chat", data => {
+      io.sockets.emit("chat", data)
+  })
 });
 
 server.listen(port, () => console.log(`app listenin on port ${port}`));
