@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-      <h1>Socket IO</h1>
+    <h1>Socket IO</h1>
+    <div class="container">
+      <div id="chat-field">
+        <div id="chat-output"></div>
+        <form action="" id="form">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="name"
+            id="name-input"
+          />
+          <textarea
+            class="input-field"
+            id="message-input"
+            cols="30"
+            rows="4"
+            placeholder="Enter message"
+          ></textarea>
+          <button id="send">send</button>
+        </form>
+      </div>
+    </div>
     <script src="socket.io/socket.io.js"></script>
     <script src="chat.js"></script>
   </body>
