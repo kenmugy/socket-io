@@ -1,0 +1,25 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#form {
+    border: 1px solid;
+display: flex;
+flex-direction: column;
+padding:20px 10px;
+}
+
+.input-field {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#send {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 60px;
+    padding: 7px;
+    cursor: pointer;
+}
